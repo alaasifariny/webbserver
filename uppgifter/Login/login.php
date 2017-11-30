@@ -15,12 +15,12 @@
         
         
         <h3>Användarnamn:<h3/>
-        <input type="text" name="username">
+        <input type="text" name="username"/>
             
         <h3>Lösenord:<h3/>
-        <input type="password" name="password">
+        <input type="password" name="password"/>
             
-            <br> </br>
+            <br> <br>
         
         <button type="submit">Login</button>
         <input type="submit" name="submit/"/>
