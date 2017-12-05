@@ -12,3 +12,10 @@ $dbc = mysqli_connect("localhost","root","","register");
     $result = mysqli_query($dbc,$query);
     if(mysqli_fetch_array($result)){
         echo "inloggad";
+        
+        
+    } else{
+    echo "Försök igen";
+}
+}
+?>
