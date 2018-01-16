@@ -2,10 +2,20 @@
 <html>
 <body>
 
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" >
 
 
+<script>
+function bigImg(x) {
+    x.style.height = "64px";
+    x.style.width = "64px";
+}
 
-<button type="button" onclick="alert('hej')">Click Me!</button>
+function normalImg(x) {
+    x.style.height = "32px";
+    x.style.width = "32px";
+}
+</script>
 
 </body>
-</html>
+</html> 
