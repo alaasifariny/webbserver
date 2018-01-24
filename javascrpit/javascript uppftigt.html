@@ -2,20 +2,29 @@
 <html>
 <body>
 
-    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" >
-
-
-<script>
-function bigImg(x) {
-    x.style.height = "64px";
-    x.style.width = "64px";
-}
-
-function normalImg(x) {
-    x.style.height = "32px";
-    x.style.width = "32px";
-}
-</script>
-
+    
+    <img id="img" src="smiley.gif" width="100px" height="200px"> </img>
+    
+    
+    <br> 
+    <button type ="button" onclick="döda mig()"> Click me !</button>
+    
+    <script>
+    
+    function döda mig (){
+    
+    if(document.getElementById('demo').style.display == 'none'){
+    document.getElementById('demo').style.display = 'block';
+    
+    
+    }
+    
+    else{
+    document.getElementById('demo').style.display == 'none';
+    }
+    
+    }
+      </script>  
+    
 </body>
 </html> 
