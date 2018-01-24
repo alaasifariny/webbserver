@@ -2,27 +2,32 @@
 <html>
 <body>
 
+    <img id="img" onmouseover="bild(this)"onmouseout="bild2(this)" border="0" src="smiley.gif" alt="Bowie picture" width="125" height="250"> </img>
     
-    <img id="img" src="smiley.gif" width="100px" height="200px"> </img>
+    
     
     
     <br> 
     <button type ="button" onclick="döda mig()"> Click me !</button>
     
+    
+    
+    
+    
     <script>
     
-    function döda mig (){
+    function döda mig(){
     
-    if(document.getElementById('demo').style.display == 'none'){
-    document.getElementById('demo').style.display = 'block';
+    if(document.getElementById('img').style.display == 'none'){
+    document.getElementById('img').style.display = 'block';
     
     
     }
     
     else{
-    document.getElementById('demo').style.display == 'none';
+    document.getElementById('img').style.display == 'none';
     }
-    
+        
     }
       </script>  
     
