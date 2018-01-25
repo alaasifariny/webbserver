@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html>
 
-    
-    <head>
-    
+
+    <head> 
+
+    </head>
+
     <style>
-        
-        div {
-            
-            
+
+        div {        
             width: 50px;
             height: 50px;
             border: 1px solid black;
             background-color: white; 
         } 
-        
-        </style>
-    
-    
-    
-    </head>
-    
-    
-   <script>
-    function color(){
-                
-                
-               if(document.getElementById("div1").style.backgroundColor=="pink"){
-                    document.getElementById("div1").style.backgroundColor="yellow";
-                }
-                
-                else if(document.getElementById("div1").style.backgroundColor=="yellow"){
-                    document.getElementById("div1").style.backgroundColor="green";
-                }
-                else {
-                    document.getElementById("div1").style.backgroundColor="pink";
-                }
-                
-            }
-    
-       </script> 
-    
-    
-    <body>
-    
-    <div id ="div1" onmousedown="color()"> </div>
-    
-    
-    
-    
-    </body>
-    
 
+    </style>
+
+
+    <script>
+        function color(){
+
+
+            if(document.getElementById("div1").style.backgroundColor=="pink"){
+                document.getElementById("div1").style.backgroundColor="yellow";
+            }
+
+            else if(document.getElementById("div1").style.backgroundColor=="yellow"){
+                document.getElementById("div1").style.backgroundColor="green";
+            }
+            else {
+                document.getElementById("div1").style.backgroundColor="pink";
+            }
+
+        }
+
+
+        function bigImg(x) {
+            x.style.height = "64px";
+            x.style.width = "64px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "32px";
+            x.style.width = "32px";
+        }
+
+    </script> 
+
+
+    <body>
+
+        <div id ="div1" onmousedown="color()"> </div>
+
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" >
+
+    </body>
 </html> 
