@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html>
-<body>
 
-    <img id="img" onmouseover="bild(this)"onmouseout="bild2(this)" border="0" src="smiley.gif" alt="Bowie picture" width="125" height="250"> </img>
     
+    <head>
     
-    
-    
-    <br> 
-    <button type ="button" onclick="döda mig()"> Click me !</button>
-    
-    
-    
-    
-    
-    <script>
-    
-    function döda mig(){
-    
-    if(document.getElementById('img').style.display == 'none'){
-    document.getElementById('img').style.display = 'block';
-    
-    
-    }
-    
-    else{
-    document.getElementById('img').style.display == 'none';
-    }
+    <style>
         
-    }
-      </script>  
+        div {
+            
+            
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: white; 
+        } 
+        
+        </style>
     
-</body>
+    
+    
+    </head>
+    
+    
+   <script>
+    function color(){
+                
+                
+               if(document.getElementById("div1").style.backgroundColor=="pink"){
+                    document.getElementById("div1").style.backgroundColor="yellow";
+                }
+                
+                else if(document.getElementById("div1").style.backgroundColor=="yellow"){
+                    document.getElementById("div1").style.backgroundColor="green";
+                }
+                else {
+                    document.getElementById("div1").style.backgroundColor="pink";
+                }
+                
+            }
+    
+       </script> 
+    
+    
+    <body>
+    
+    <div id ="div1" onmousedown="color()"> </div>
+    
+    
+    
+    
+    </body>
+    
+
 </html> 
